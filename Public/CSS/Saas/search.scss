@@ -1,0 +1,13 @@
+.search__tweet--header{
+  @extend .profil__tweet--header;
+  margin-left: 0;
+  width: 80%;
+}
+
+.tab__panel{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+

@@ -1,0 +1,167 @@
+@media(max-width: 1280px) {
+  .item__name {
+    display: none;
+  }
+  .btn__tweet {
+    display: none;
+
+    &--sm {
+      display: flex;
+      margin: 0;
+    }
+  }
+  .left__col {
+    max-width: max-content;
+  }
+
+  .menu__utils {
+    margin-right: 0 !important;
+  }
+
+  .tweet__feed {
+    min-width: 56%;
+  }
+
+  .user_image--lg {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .bg__register--img{
+    background-size: cover !important;
+  }
+}
+
+@media(max-width: 1000px) {
+  .tweet__feed {
+    max-width: 600px;
+  }
+  .right__col {
+    display: none;
+  }
+}
+
+@media(max-width: 840px) {
+  .content__center {
+    width: 100%;
+  }
+  .welcome__titre{
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width: 740px) {
+  .content__center {
+    flex-direction: column;
+  }
+  .home__btn {
+    margin-bottom: 30px;
+  }
+
+  .modal-dialog{
+    height: 100%;
+    margin: 0;
+    min-width: 100%;
+  }
+
+  .modal-content.tweet__modal{
+    border-radius: unset !important;
+    height: 100%;
+  }
+  .footer__modal{
+    display: none !important;
+  }
+
+  .footer__modal--sm{
+    display: flex !important;
+  }
+
+  .divider__sm--sm{
+    display: block !important;
+  }
+
+  .tweet__modal > hr {
+    display: none;
+    }
+
+  .footer__modal--sm > .utils{
+    margin-left: 178px !important;
+  }
+
+  .dropdown-menu.emojiPickerModal{
+    top: 160px !important;
+  }
+  .user_image--lg {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+}
+
+@media(max-width: 520px) {
+  .logo__xl {
+    max-width: 300px;
+  }
+
+  .left__col--item{
+    margin: 8px 5px;
+  }
+
+  .btn__tweet--sm {
+    position: absolute;
+    bottom: 95px;
+    right: 15px;
+    width: 59px;
+    height: 59px;
+  }
+  .left__col--sm{
+    display: flex !important;
+  }
+
+  .left__col{
+    display: none !important;
+  }
+
+  body.dark .navbar__header{
+    width: 69% !important;
+  }
+}
+
+@media(max-width: 748px) {
+  .navbar__header {
+    width: 100%;
+  }
+
+  .tweetWac__logo {
+    margin-left: 40px;
+  }
+
+  .profil__overlay--name {
+    display: none;
+  }
+
+  body.dark .tweetWac__logo{
+    margin-left: unset;
+  }
+  body.dark .navbar__header{
+    width: 62%;
+  }
+
+}
+
+
+//menu responsive version mobile
+
+.left__col--sm {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  background: #ffffff;
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+  margin-top: 64px;
+  border-top: 1px solid #ebeef0;
+  box-shadow: 0 0 30px rgba(207, 207, 207, 0.46);
+}

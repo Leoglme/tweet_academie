@@ -1,0 +1,277 @@
+/* ---------------- Inscription ------------------- */
+
+$smMobile: "(max-width: 477.98px)";// size box register
+
+.bg__register--img {
+  background: url('../assets/images/walpaperConnect.jpg');
+  object-fit: contain;
+  max-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+%borderInput {
+  border: 1px solid rgb(196, 207, 214);
+  border-radius: 4px;
+}
+
+%bodyRegLogin {
+
+  @media #{$smMobile} {
+    width: 100% !important;
+  }
+}
+
+%linkRegLog {
+    float: right;
+    outline: none;
+    user-select: none;
+    color: #00657c;
+    margin-top: 32px;
+  text-align: center;
+  &:hover{
+    color: #5ebcee;
+  }
+}
+
+%labelReglog {
+  float: left;
+  width: 100%;
+  color: #00657c;
+  margin: 0;
+}
+
+%inputReglog {
+    width: 100%;
+    height: 2.1em;
+    outline: none;
+    background: transparent;
+    border-color: transparent;
+    color: #595959;
+}
+
+%textAreaReglog {
+  outline: none;
+  background: transparent;
+  border-color: transparent;
+  color: #595959;
+  width: 100%;
+}
+
+.title {
+  width: 85%;
+  text-align: start;
+  margin: 2em auto 2em 18px;
+  color: #FFF;
+  & h3 {
+    font-size: 30px;
+    color: black;
+    font-family: "Chirp", "Verdana", "System", serif;
+    font-weight: 700;
+  }
+
+  &--firstLetter {
+    font-size: 30px;
+    font-family: "Chirp", "Verdana", "System", serif;
+    font-weight: 700;
+    color: #00657c;
+  }
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  @extend  %bodyRegLogin;
+
+  &--link {
+    @extend %linkRegLog;
+  }
+
+  &-label {
+    @extend %labelReglog;
+  }
+
+  &-input {
+    @extend %inputReglog;
+  }
+
+  &-textArea {
+    @extend %textAreaReglog;
+  }
+}
+
+.input--birthDate {
+  width: 60%;
+  margin-right: 40%;
+  @media #{$smMobile} {
+    width: 100%;
+    margin-right: inherit;
+  }
+}
+
+.button--submit {
+  margin: 1.5em auto 0 auto;
+  border-radius: 20px;
+  height: 2.8em;
+  width: 80%;
+  font-size: 1em;
+}
+
+.space {
+  margin-bottom: 1em;
+}
+
+/* --------------- Connexion ----------------*/
+
+.connexion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25em;
+  padding: 0 16px;
+  @extend  %bodyRegLogin;
+
+  @media #{$smMobile} {
+    width: 100%;
+  }
+
+  &--link {
+    @extend %linkRegLog;
+  }
+
+  &-label {
+    @extend %labelReglog;
+  }
+
+  &-input {
+    @extend %inputReglog;
+  }
+
+  &-textArea {
+    @extend %textAreaReglog;
+  }
+}
+
+.input__container {
+  width: 100%;
+  border: 1px solid #c4cfd6;
+  padding-left: 5px;
+  border-radius: 4px;
+  background: #00657c05;
+  margin: 12px 0;
+}
+
+.error__log{
+  box-shadow: #8d0000 0 0 0 1px;
+  border-color: #8d0000;
+}
+
+.input__focus{
+  box-shadow: #00657c 0 0 0 1px;
+  border-color: #00657c;
+}
+
+
+/* ---------------- ACCEUIL --------------------*/
+
+#currentTweet, #replyTweet {
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+#replyTweet  {
+  padding-left: 4.5em;
+  padding-top: 0;
+  max-width: 100%;
+}
+
+#currentTweet {
+  width: 100%;
+  display:inherit !important;
+}
+// color @ date color: rgb(91, 112, 131);
+// box contain all icon
+#contentIcon {
+  display: flex;
+}
+
+#nbrReply, #nbrRetweet {
+  margin-top: 0.22em;
+}
+
+#retweet{
+  margin-left: 15%;
+}
+
+%iconInTweet {
+  border: none;
+  background-color: inherit;
+  width: 2em;
+  height: 2em;
+  //margin: 0 auto 0 auto;
+}
+
+.retweet:hover {
+  color: #41c833;
+  background-color: rgba(23, 191, 99, 0.1);
+  border-radius: 80%;
+}
+
+.onRetweet {
+  color: #41c833;
+}
+
+.onReply {
+  color: #007bff;
+}
+
+.reply {
+  @extend %iconInTweet;
+}
+.retweet {
+  @extend %iconInTweet;
+}
+
+.reply:hover {
+  color: #007bff;
+  border-radius: 80%;
+  background-color: rgba(0,123,255,0.15);
+}
+
+.reply:focus , .retweet:focus {
+  outline: none;
+}
+
+/*----------------------- Response tweet ---------------------*/
+
+.nwNone {
+  flex-wrap: wrap !important;
+}
+
+.box__name {
+  height: min-content;
+  width: 100%;
+  padding: 0 0 0.5em 0;
+}
+
+.big_tweet {
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.back {
+  background-color: inherit;
+  width: 1em;
+  height: 1em;
+}
+
+.back:hover {
+  color: #007bff;
+  border-radius: 80%;
+  background-color: rgba(0,123,255,0.15);
+}

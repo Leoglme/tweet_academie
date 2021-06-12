@@ -1,0 +1,22 @@
+footer {
+  height: 120px;
+  width: 100%;
+  margin-top: 7%;
+  background: #00657c;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 10px;
+  font-family: roboto, serif;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.tweet__logo--footer
+{
+  max-width: 100px;
+}

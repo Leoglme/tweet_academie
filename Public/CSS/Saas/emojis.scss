@@ -1,0 +1,41 @@
+.emojiPicker{
+  width: 296px;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  position: absolute;
+  left: 0 !important;
+  top: 192px !important;
+
+  &:before{
+    height: 15px;
+    width: 15px;
+    right: 50%;
+    left: auto;
+  }
+
+  &Modal{
+    @extend .emojiPicker;
+    z-index: 2000;
+    top: 193px !important;
+    left: 5px !important;
+  }
+}
+
+.emojis{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+.emoji{
+  padding: 5px;
+  cursor: default;
+  user-select: none;
+  &:hover{
+    background: #e9f1f4;
+  }
+  &:active{
+    background: #d9e3ec;
+  }
+}

@@ -1,0 +1,87 @@
+.bg-poppins {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.tweet__modal, .reply__modal {
+  border-radius: 12px !important;
+
+  & > hr{
+    width: 78%;
+    margin: 0 25px 0 auto;
+  }
+
+  &--header{
+    background: #fff;
+    border-radius: 12px 12px 0 0 !important;
+  }
+
+  &--close{
+    font-size: 18px;
+    color: #00657c;
+    cursor: pointer;
+  }
+
+  &--footer{
+    border: none;
+  }
+
+  .emojiPicker{
+    left: -15px !important;
+    top: 262px !important;
+  }
+}
+
+.poppins-content {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+#cross {
+  border: none;
+  outline: none;
+  margin: 2px 0 0 2px;
+  width: 40px;
+  height: 50px;
+  transition-duration: 0.2s;
+}
+
+#cross:hover {
+  transition-duration: 0.2s;
+  background-color: rgba(29, 161, 242, 0.2);
+  border-radius: 50%;
+}
+
+#ligne {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 2px;
+  background-color: gray;
+  width: 100%;
+}
+
+#photo {
+  width: 50px;
+  height: 50px;
+}
+
+#text-tweet{
+  height: 100%;
+  margin-left: 70px;
+  margin-top: -50px;
+  border: none;
+  outline: none;
+}
+
+.footer__modal--sm{
+  display: none;
+}
+
+.divider__sm--sm{
+  display: none;
+  width: 78%;
+  margin: 20px 25px 0 auto;
+}

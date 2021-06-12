@@ -1,0 +1,32 @@
+/*------------------- Modal -----------------------*/
+
+.modal {
+  @extend %hide;
+  position: fixed;
+  z-index: 1;
+
+  &-content {
+    padding: 1.5em 1.5em;
+    border: 1px solid $muted;
+    border-radius: 8px;
+
+    background-color: $white;
+
+    @media #{$mobile} {
+      width: 20em;
+    }
+
+    @media #{$minMobileXl} {
+      width: 30em;
+    }
+
+    @media #{$minDesktops} {
+      width: 40em;
+      //max-width: 50%;
+    }
+  }
+
+}
+
+
+

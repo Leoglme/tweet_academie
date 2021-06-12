@@ -1,0 +1,100 @@
+.mask__background {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(87deg, #54d7f4 0, #064553 100%);
+  opacity: .5;
+  min-height: 600px;
+}
+.welcome{
+  min-height: 600px;
+  width: 100%;
+  background-image: url(../../Public/assets/images/homebg.jpg);
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+
+  &__text{
+    font-family: Open Sans, sans-serif;
+    padding-left: 60px !important;
+  }
+
+  &__titre{
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+}
+
+.card {
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15);
+  border: 1px solid rgba(0, 0, 0, .05) !important;
+
+  &__compte{
+    background-color: #f7fafc !important;
+  }
+
+  &-header{
+    background-color: #fff !important;
+    height: 76px;
+  }
+}
+
+.header__compte {
+  display: flex;
+  align-items: center;
+}
+
+.user__name--snd {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #32325d;
+  font-weight: 600 !important;
+  font-family: helvetica, Arial, serif;
+  text-transform: capitalize;
+}
+
+.heading-small.text-muted {
+  font-size: .75rem;
+  font-weight: 600;
+  color: #8898aa !important;
+  padding: .25rem 0;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.form-control.form__edit {
+  line-height: 1.5 !important;
+  display: block !important;
+  width: 100% !important;
+  padding: .625rem .75rem !important;
+  color: #8898aa !important;
+  border-radius: .375rem !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  font-size: .875rem !important;
+  transition: box-shadow .15s ease !important;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);
+}
+
+.form-control-label {
+  font-size: .875rem;
+  font-weight: 600;
+  color: #525f7f;
+}
+
+.edit__container {
+  margin-top: -6rem;
+  padding-right: 39px !important;
+  padding-left: 39px !important;
+  font-family: Open Sans, sans-serif;
+}
+
+.btn__default{
+  border-radius: 4px;
+  max-width: 148px;
+}

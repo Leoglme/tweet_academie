@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+
+// Modal Design
+.modal {
+  background: rgba(45, 45, 45, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+
+  &-content {
+    border-radius: unset !important;
+    border: none;
+  }
+
+  &-header {
+    background: #00657c;
+    border-radius: unset !important;
+  }
+
+  & p {
+    font-size: 14px;
+  }
+
+  &-title {
+    color: #ffffff;
+  }
+}
+
+//Modification Général de bootstrap
+hr {
+  border-color: #ebeef0;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08) !important;
+  text-decoration: none;
+}
+
+.btn-info {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 22px;
+  border: unset;
+  background: #00657c;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+
+  &:focus, &:active {
+    box-shadow: unset !important;
+    background: #03809d;
+  }
+}
+
+.btn-outline-info {
+  width: max-content;
+  margin: 0 15px 10px 0;
+  color: #00657c;
+  border-color: #00657c;
+  border-radius: 22px;
+  padding: 8px 15px;
+  font-size: 15px;
+
+  &:hover {
+    background: #138496;
+    transform: translateY(-2px);
+  }
+
+  &:active, &:focus {
+    background: #00657c !important;
+    box-shadow: unset !important;
+    color: #FFFFFF;
+  }
+}
+
+
+.btn__follow {
+  @extend .btn-outline-info;
+  min-width: 75px;
+  min-height: 32px;
+  padding: 0 15px;
+  background: transparent;
+
+  &:hover {
+    background: rgba(0, 101, 124, 0.1);
+    transform: none;
+    box-shadow: none !important;
+  }
+
+  &:after {
+    content: 'Suivre';
+  }
+}
+
+
+.btn__follow--on {
+  @extend .btn__follow;
+  background: #00657c;
+  color: #ffffff;
+  border-color: transparent;
+
+  &:after {
+    content: 'Abonné';
+  }
+
+  &:hover {
+    background: rgb(202, 32, 85);
+
+    &:after {
+      content: 'Se désabonner';
+    }
+  }
+
+  &:focus, &:active {
+    background: rgb(179, 29, 75) !important;
+
+    &:after {
+      content: 'Se désabonner';
+    }
+  }
+}
+
+.btn__tweet--sm {
+  @extend .btn-info;
+  display: none;
+  color: #ffffff;
+  width: 47px;
+  margin-left: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-plus {
+  font-size: 10px;
+}
+
+.form-outline {
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  border: 1px solid #0d0d0d;
+  padding: 0 10px;
+  width: 80%;
+
+  &:active {
+    border-color: #00657c;
+  }
+}
+
+.SearchActive {
+  border-color: #00657c;
+}
+
+.search__tweet {
+  border: none;
+  background: transparent;
+
+  &:hover, &:focus {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  padding-top: 10px;
+}
+
+.hide__input {
+  border: none !important;
+  resize: none;
+  overflow: hidden;
+  background: transparent;
+
+  &:focus {
+    background: transparent;
+    box-shadow: unset !important;
+  }
+}
+
+//comments error
+.comments {
+  color: brown;
+  font-style: italic;
+  font-size: 0.89em;
+}
+
+
+//Modification Général du site
+.user_image--apercu {
+  max-width: 47px;
+  height: 47px;
+}
+
+.img_modal {
+  height: max-content;
+}
+
+.col__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sm__btn--disabled {
+  width: 84px;
+  height: 39px;
+  font-size: 15px;
+  opacity: 0.5;
+  margin-bottom: 5px;
+
+  &:hover {
+    background: #17a2b8;
+    transform: translateY(0);
+  }
+
+  &:active {
+    background: #17a2b8;
+    box-shadow: unset;
+  }
+}
+
+.btn__info--active {
+  width: 84px;
+  height: 39px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.btn-blue {
+  color: #fff;
+  background: #00657c;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.bold {
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+
+a.user__pseudo {
+  line-height: 40px;
+
+  &:hover {
+    color: #5b7083;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn__tab {
+  color: #00657c;
+  background: transparent;
+  border-radius: unset;
+  width: inherit;
+  min-width: 200px;
+  font-family: "Segoe UI", serif;
+  font-weight: 600;
+
+  &:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: rgba(0, 101, 124, 0.1) !important;
+  }
+
+  &.active {
+    border-bottom: 2px solid;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn--lg {
+  min-width: 120px;
+  min-height: 40px;
+}
+
+/*Page message*/
+.suggest__msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 59%;
+}
+
+.messages__result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 180px;
+  border-right: 1px solid #ebeef0;
+}
+
+.message__header {
+  position: sticky;
+  top: 79px;
+  background: #fff;
+  z-index: 50;
+}
+
+.search__messages {
+  min-height: 80px;
+  justify-content: center;
+}
+
+.header__msg {
+  min-height: 76px;
+  flex-direction: row !important;
+  align-items: center;
+  margin-left: 15px !important;
+}
+
+.add__msg--btn {
+  border: none;
+  background: none;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  color: #00657c;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+
+  &:active {
+    color: #1da1f2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: rgba(29, 161, 242, 0.06);
+  }
+
+  & .fa-envelope {
+    position: relative;
+    top: 9px;
+    left: 1px;
+    height: max-content;
+    padding-bottom: 10px;
+    padding-left: 4px;
+  }
+
+  & .fa-plus {
+    padding-bottom: 10px;
+  }
+}
+
+.right__col--msg {
+  min-height: 100vh;
+  top: 80px;
+  margin-right: 150px;
+  border-right: 1px solid #ebeef0;
+}
+
+.message__send {
+  background-color: rgb(0, 101, 124);
+  border-radius: 16px 16px 0 16px;
+  width: max-content;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+.column__feed{
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+.message__send--ctn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message__receive{
+  @extend .message__send;
+  background: rgb(235, 238, 240);
+  color: #0d0d0d;
+}
+
+.message__send--ctn, .message__receive--ctn{
+  margin: 20px 0;
+}
+
+#input_messages{
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #ebeef0;
+    border-bottom: 0;
+    background: #fff;
+}
+#input_messages .left__col--btn{
+  padding: 0 0 15px 0;
+}
+
+#input_messages .left__col--btn .emojiPicker{
+  top: -154px !important;
+  width: 100%;
+
+  & .tweet_feed--title{
+    font-size: 20px;
+  }
+
+  &:before{
+    height: 0;
+  }
+}

@@ -1,0 +1,381 @@
+$primary: #1da1f2;
+
+
+body.dark {
+  background: #17202a;
+
+  header, footer, .left__col--sm {
+    background: #17202a;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.46);
+  }
+
+  .left__col--sm{
+    border-color: #434a52;
+  }
+
+  h1 {
+    color: #ffffff;
+  }
+
+  .btn-info {
+    background-color: $primary;
+    box-shadow: 0 0 40px rgba(247, 247, 247, 0.2);
+
+    &:hover {
+      background-color: #1a90da;
+    }
+
+    &:focus, &:active {
+      background-color: $primary !important;
+    }
+  }
+  .left__col--item {
+    color: #ffffff;
+
+    &.active{
+      color: $primary;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:active {
+      color: #00657c;
+    }
+  }
+
+  .form-outline {
+    border-color: #ffffff;
+
+    &:active {
+      border-color: $primary;
+    }
+  }
+
+  .SearchActive {
+    border-color: $primary !important;
+  }
+  .search__tweet {
+    color: #dedede;
+  }
+  .suggest{
+    background: #1c242d;
+  }
+
+  .new__user:hover, .new__tweet:hover{
+    background: #141a21;
+  }
+
+  .user__name{
+    color: #ffffff;
+    &:hover{
+      color: #ffffff;
+    }
+  }
+
+  .user__pseudo{
+    color: #88959f;
+  }
+
+  hr{
+    border-color: #434a52;
+  }
+
+  .tweet_message{
+    color: #e7e7e7;
+  }
+  .col.tweet__feed {
+    border-color: #434a52;
+  }
+
+  .item__border{
+    border-color: #434a52;
+  }
+
+  .utils{
+    color: #1da1f2;
+  }
+
+  .modal{
+    &-header{
+      background: #1da1f2;
+    }
+    &-content, .tweet__modal--header{
+      background: #151d26;
+    }
+
+    &__disconnect{
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    &-body{
+      color: #ffffff;
+    }
+  }
+
+  textarea{
+    color: #ffffff;;
+    &:focus{
+      color: #ffffff;
+    }
+  }
+  .emojiPicker
+  {
+    background: #111820;
+    &:before{
+      background: #111820;
+    }
+  }
+
+  .emoji:hover {
+    background: #202a35;
+  }
+
+  .tweet__modal--close {
+    color: #1da1f2;
+  }
+
+  .btn-blue {
+    background: #1da1f2;
+  }
+
+  .modal__disconnect .modal-footer,.modal__disconnect .modal-header{
+    border-color: #434a52;
+  }
+
+  .mask__background{
+    background: linear-gradient(87deg, #1d7cd6 0, #17202a 100%);
+  }
+  .card-header, .card{
+    background: #18212b !important;
+  }
+
+  .form-control-label {
+    color: #5ebcee;
+  }
+  .user__name--snd {
+    color: #1da1f2;
+  }
+
+  .form-control.form__edit{
+    background-color: transparent !important;
+    border: 1px solid #494949 !important;
+  }
+
+  .user_image--lg {
+    border: 4px solid #17202a;
+  }
+
+  #abonnements:hover, #abonnes:hover {
+    color: #1da1f2 !important;
+  }
+  #abonnements, #abonnes {
+    color: #FFFFFF !important;
+  }
+  #abonnements .bold, #abonnes .bold {
+    color: #d5d5d5 !important;
+  }
+
+  .btn__tab.active, .add__msg--btn{
+    color: #1da1f2;
+  }
+
+  .btn__tab{
+    color: #FFFFFF;
+    &:hover{
+      background: rgba(29, 161, 242, 0.1) !important;
+    }
+  }
+
+  .btn-outline-info{
+    color: #1da1f2 !important;
+    border-color: #1da1f2;
+    &:hover{
+      background: #1da1f2 !important;
+      color: #FFFFFF !important;
+    }
+  }
+
+  .btn__follow--on{
+    background: #1da1f2 !important;
+    color: #fff !important;
+    &:hover{
+      background: #ca2055 !important;
+      border-color: transparent;
+    }
+  }
+
+  #profilePage .fa-arrow-left{
+      color: #1da1f2;
+    &:hover{
+      color: #FFFFFF;
+    }
+  }
+
+  .message__header, #input_messages {
+    background: #17202a;
+  }
+
+  .message__send{
+    background: #1da1f2;
+  }
+
+  .message__receive{
+    background: #ebeef0;
+  }
+
+
+}
+
+
+//Switch mode sombre
+.toggleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  input {
+    display: none;
+  }
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 55px;
+  height: 27px;
+  margin-left: 10px;
+  background-color: #83D8FF;
+  border-radius: 90px - 6;
+  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  margin-bottom: unset;
+}
+
+.toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 1px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background-color: #FFCF96;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg);
+}
+
+.item {
+  position: absolute;
+  background-color: #ffffff;
+  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  border-radius: 50%;
+  width: 24px;
+  height: 3px;
+
+  &__1 {
+    top: 5px;
+    left: 18px;
+    z-index: 0;
+  }
+
+  &__2 {
+    top: 12px;
+    left: 16px;
+    z-index: 1;
+  }
+
+  &__3 {
+    top: 18px;
+    left: 22px;
+    z-index: 0;
+  }
+
+  &__4 {
+    top: 8px;
+    left: 8px;
+    z-index: 0;
+    width: 2px;
+    height: 2px;
+    transform: translate3d(3px, 0, 0);
+  }
+
+  &__5 {
+    top: 18px;
+    left: 8px;
+    z-index: 0;
+    width: 3px;
+    height: 3px;
+    transform: translate3d(3px, 0, 0);
+  }
+
+  &__6 {
+    top: 21px;
+    left: 17px;
+    z-index: 0;
+    width: 2px;
+    height: 2px;
+    transform: translate3d(3px, 0, 0);
+  }
+
+  &__4,
+  &__5,
+  &__6 {
+    opacity: 0;
+    transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+}
+
+input:checked {
+  + .toggle {
+    background-color: #749DD6;
+
+    &:before {
+      color: #749ED7;
+    }
+
+    &:after {
+      color: #ffffff;
+    }
+
+    .toggle__handler {
+      background-color: #FFE5B5;
+      transform: translate3d(28px, 0, 0) rotate(0);
+    }
+
+    .item {
+      &__1 {
+        width: 2px;
+        height: 2px;
+        left: 26px;
+      }
+
+      &__2 {
+        width: 4px;
+        height: 4px;
+        top: 11px;
+        left: 20px;
+        transform: translate3d(-5px, 0, 0);
+      }
+
+      &__3 {
+        width: 2px;
+        height: 2px;
+        left: 30px;
+        transform: translate3d(-7px, 0, 0);
+      }
+
+      &__4,
+      &__5,
+      &__6 {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      }
+    }
+  }
+}

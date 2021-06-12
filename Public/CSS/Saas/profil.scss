@@ -1,0 +1,51 @@
+.fa-arrow-left{
+  color: #00657c;
+  &:hover{
+    text-decoration: none;
+    color: #00657c;
+  }
+  &:focus{
+    color: #1da1f2;
+  }
+}
+
+.user__name--bold{
+  margin: 0;
+  font-size: 19px;
+  font-family: "Segoe UI", serif;
+  font-weight: 800;
+}
+
+.profil__tweet--header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.user__banner {
+  background: linear-gradient(180deg, #c4cfd6 200px, transparent 50%);
+  width: 100%;
+  height: 268px;
+  display: flex;
+  flex-direction: column-reverse;
+  &--info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.user_image--lg {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-size: contain !important;
+  border: 4px solid #fff;
+  margin-left: 16px;
+}
+
+#abonnements:hover, #abonnes:hover{
+   cursor: pointer;
+  text-decoration: underline;
+}
